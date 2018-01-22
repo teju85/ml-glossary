@@ -22,7 +22,8 @@ default:
 	@echo " . clean   - clean the generated files"
 	@echo " . update  - update 3rd-party js/css files"
 
-publish: build
+publish:
+	jekyll build -s $(SRC_DIR) -d $(SITE_DIR)
 	git add -A
 	EDITOR=vi git commit
 	git checkout $(DST_BRANCH)

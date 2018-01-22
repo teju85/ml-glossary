@@ -8,4 +8,8 @@
     <script rel="src" src="{{ "/assets/jquery-1.11.1.min.js" | relative_url }}"></script>
     <script rel="src" src="{{ "/assets/katex.min.js" | relative_url }}"></script>
   {% endif %}
+  {% if page.needsearch %}
+    <link rel="stylesheet" href="{{ "/assets/filter.css" | relative_url }}">
+    <script rel="src" src="{{ "/assets/filter.js" | relative_url }}"></script>
+  {% endif %}  
 </head>

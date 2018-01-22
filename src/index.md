@@ -1,9 +1,12 @@
 ---
 layout: home
+needsearch: true
 ---
-<ul class="post-list">
+<input type="text" id="termSearch" onkeyup="filterTerms()" placeholder="Filter terms...">
+
+<ul class="post-list" id="termsList">
   {% for post in site.posts reversed %}
-    <li id="{{ post.url | remove: '/terms/' | remove: '.html' }}">
+    <li>
       <h3>
         <a class="post-link" href="{{ site.baseurl }}{{ post.url }}">
           {{ post.title | escape }}
