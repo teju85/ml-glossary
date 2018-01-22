@@ -24,6 +24,7 @@ $ make update
 * For references, use the 'references' variable
 * Use 'aka' for listing its aliases
 * To render math equations, 'needmath: true'
+
 Easiest is to copy an existing file and modify according to your needs! :)
 Name and store the file under 'src/_posts/2018-01-01-<name-of-the-term>.md'.
 Yes, maintain the same date across all files! I was unable to get jekyll to
