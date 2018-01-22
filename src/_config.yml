@@ -1,0 +1,20 @@
+# Site settings
+title: ML Glossary
+description: >-
+  A glossary of ML keywords.
+baseurl: "/ml-glossary"
+url: "https://teju85.github.io"
+
+permalink: /terms/:title.html
+
+# Build settings
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
