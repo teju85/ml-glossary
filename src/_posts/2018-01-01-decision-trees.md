@@ -11,7 +11,7 @@ non-leaf child nodes, until a leaf node is encountered.
 
 These trees can also be thought of as partitioning the input dataset using these
 condition checks, all the way down to leaf nodes, recursively. However, this
-also means that it is more susceptible for over-fitting.
+also means that it is more susceptible for overfitting.
 
 It is also one way to visualize nested conditional statements in programs. These
 are one of the most popular ML models, especially for structured datasets.

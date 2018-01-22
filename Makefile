@@ -12,6 +12,8 @@ ASSETS     = $(SRC_DIR)/assets
 FONTS      = $(ASSETS)/fonts
 
 
+COMMIT_MSG ?=
+
 default:
 	@echo "make what? Available targets are:"
 	@echo " . publish - publish the built pages as well as original"
@@ -23,14 +25,18 @@ default:
 	@echo " . update  - update 3rd-party js/css files"
 
 publish:
+	@read -p "Enter commit message: " cmtMsg && \
+	    $(MAKE) COMMIT_MSG="$$cmtMsg" _publish
+
+_publish:
 	jekyll build -s $(SRC_DIR) -d $(SITE_DIR)
 	git add -A
-	EDITOR=vi git commit
+	git commit -m "$(COMMIT_MSG)"
 	git checkout $(DST_BRANCH)
 	git rm -qr `ls -I $(SITE_DIR)`
 	cp -r $(SITE_DIR)/* .
 	git add -A
-	EDITOR=vi git commit
+	git commit -m "$(COMMIT_MSG)"
 	git checkout $(SRC_BRANCH)
 	git push origin $(SRC_BRANCH) $(DST_BRANCH)
 
