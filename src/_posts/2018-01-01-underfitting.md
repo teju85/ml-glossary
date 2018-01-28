@@ -1,7 +1,9 @@
 ---
 layout: page
 title: underfitting
-seealso: overfitting, bias
+seealso:
+  - overfitting
+  - bias
 references:
   - https://en.wikipedia.org/wiki/Overfitting
   - https://machinelearningmastery.com/overfitting-and-underfitting-with-machine-learning-algorithms/

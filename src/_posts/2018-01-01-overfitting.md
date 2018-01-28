@@ -1,7 +1,9 @@
 ---
 layout: page
 title: overfitting
-seealso: underfitting, variance
+seealso:
+  - underfitting
+  - variance
 references:
   - https://en.wikipedia.org/wiki/Overfitting
   - https://machinelearningmastery.com/overfitting-and-underfitting-with-machine-learning-algorithms/

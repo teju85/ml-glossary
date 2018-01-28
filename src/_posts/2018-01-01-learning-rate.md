@@ -1,7 +1,9 @@
 ---
 layout: page
 title:  learning rate
-seealso: sgd, hyper-parameters
+seealso:
+  - sgd
+  - hyper-parameters
 needmath: true
 ---
 It is a hyper-parameter that controls the step-size during gradient-based
