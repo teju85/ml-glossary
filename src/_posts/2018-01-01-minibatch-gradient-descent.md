@@ -17,7 +17,7 @@ Where:
 1. $$n$$ = batch size
 2. $$x_n^i, y_n^i$$ i'th input batch from the dataset.
 3. all others as explained in
-[batch gradient descent]({{ site.baseurl }}{% post_url 2018-01-01-batch-gradient-descent %})
+[gradient descent]({{ site.baseurl }}{% post_url 2018-01-01-gradient-descent %})
 
 Pros:
 1. Reduces high variance updates seen in

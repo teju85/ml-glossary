@@ -6,15 +6,15 @@ references:
 needmath: true
 seealso:
   - gradient-descent
+  - minibatch-gradient-descent
+  - stochastic-gradient-descent
 ---
 This performs gradient descent with the entire dataset.
 
 $$ \theta = \theta - \eta . \nabla_{\theta} J(\theta) $$
 
-Where:
-1. $$\theta$$ = set of parameters
-2. $$\eta$$ = learning rate
-3. J = the function to be optimized
+Where the meaning of each is as defined in
+[gradient descent]({{ site.baseurl }}{% post_url 2018-01-01-gradient-descent %})
 
 Pros:
 1. Guaranteed to converge to global minima for convex $$J$$.

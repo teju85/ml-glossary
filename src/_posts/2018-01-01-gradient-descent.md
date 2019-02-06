@@ -22,5 +22,8 @@ in the *opposite* side of their gradient.
 
 $$\theta = \theta - \eta . \nabla_{\theta} J(\theta)$$
 
-$$\eta$$ is the learning rate, a hyperparameter that is to be tuned to achieve
+Where:
+1. $$\theta$$ = set of parameters
+2. J = the function to be optimized
+3. $$\eta$$ = learning rate, a hyperparameter that is to be tuned to achieve
 good convergence.

@@ -18,7 +18,7 @@ $$ \theta = \theta - \eta . \nabla_{\theta} J(\theta, x^i, y^i) $$
 Where:
 1. $$x^i, y^i$$ i'th input sample and label in the dataset
 2. all others as explained in
-[batch gradient descent]({{ site.baseurl }}{% post_url 2018-01-01-batch-gradient-descent %})
+[gradient descent]({{ site.baseurl }}{% post_url 2018-01-01-gradient-descent %})
 
 Pros:
 1. Runs fast
