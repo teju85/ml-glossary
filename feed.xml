@@ -1,102 +1,117 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="https://teju85.github.io/ml-glossary/feed.xml" rel="self" type="application/atom+xml" /><link href="https://teju85.github.io/ml-glossary/" rel="alternate" type="text/html" /><updated>2019-02-17T11:28:32+05:30</updated><id>https://teju85.github.io/ml-glossary/</id><title type="html">ML Glossary</title><subtitle>A glossary of ML keywords.</subtitle><entry><title type="html">weights</title><link href="https://teju85.github.io/ml-glossary/terms/weights.html" rel="alternate" type="text/html" title="weights" /><published>2018-01-01T00:00:00+05:30</published><updated>2018-01-01T00:00:00+05:30</updated><id>https://teju85.github.io/ml-glossary/terms/weights</id><content type="html" xml:base="https://teju85.github.io/ml-glossary/terms/weights.html"></content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">variance</title><link href="https://teju85.github.io/ml-glossary/terms/variance.html" rel="alternate" type="text/html" title="variance" /><published>2018-01-01T00:00:00+05:30</published><updated>2018-01-01T00:00:00+05:30</updated><id>https://teju85.github.io/ml-glossary/terms/variance</id><content type="html" xml:base="https://teju85.github.io/ml-glossary/terms/variance.html">&lt;p&gt;Variance is the amount of change in the target estimation with a different
-training data.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://teju85.github.io/ml-glossary/feed.xml" rel="self" type="application/atom+xml" /><link href="https://teju85.github.io/ml-glossary/" rel="alternate" type="text/html" /><updated>2019-08-01T15:54:08+05:30</updated><id>https://teju85.github.io/ml-glossary/feed.xml</id><title type="html">ML Glossary</title><subtitle>A glossary of ML keywords.</subtitle><entry><title type="html">weights</title><link href="https://teju85.github.io/ml-glossary/terms/weights.html" rel="alternate" type="text/html" title="weights" /><published>2018-01-01T00:00:00+05:30</published><updated>2018-01-01T00:00:00+05:30</updated><id>https://teju85.github.io/ml-glossary/terms/weights</id><content type="html" xml:base="https://teju85.github.io/ml-glossary/terms/weights.html"></content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Adagrad</title><link href="https://teju85.github.io/ml-glossary/terms/adagrad.html" rel="alternate" type="text/html" title="Adagrad" /><published>2018-01-01T00:00:00+05:30</published><updated>2018-01-01T00:00:00+05:30</updated><id>https://teju85.github.io/ml-glossary/terms/adagrad</id><content type="html" xml:base="https://teju85.github.io/ml-glossary/terms/adagrad.html">&lt;p&gt;This method updates the learning rate to each parameter. Large updates for
+infrequent params, small updates for the frequent ones.&lt;/p&gt;
 
-&lt;p&gt;Ideally, this estimate should not vary a lot. But some ML algorithms have high
-variance than others. In such cases, they are sensitive to the specifics of the
-training data.&lt;/p&gt;</content><author><name></name></author><summary type="html">Variance is the amount of change in the target estimation with a different training data.</summary></entry><entry><title type="html">unitary matrix</title><link href="https://teju85.github.io/ml-glossary/terms/unitary-matrix.html" rel="alternate" type="text/html" title="unitary matrix" /><published>2018-01-01T00:00:00+05:30</published><updated>2018-01-01T00:00:00+05:30</updated><id>https://teju85.github.io/ml-glossary/terms/unitary-matrix</id><content type="html" xml:base="https://teju85.github.io/ml-glossary/terms/unitary-matrix.html">&lt;p&gt;A square matrix &lt;em&gt;M&lt;/em&gt; is called unitary if:
-&lt;script type=&quot;math/tex&quot;&gt;M . M* = M* . M = I&lt;/script&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;M = a real/complex square matrix&lt;/li&gt;
-  &lt;li&gt;M* = conjugate transpose of M&lt;/li&gt;
-  &lt;li&gt;I = identity matrix&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">A square matrix M is called unitary if: M = a real/complex square matrix M* = conjugate transpose of M I = identity matrix</summary></entry><entry><title type="html">underfitting</title><link href="https://teju85.github.io/ml-glossary/terms/underfitting.html" rel="alternate" type="text/html" title="underfitting" /><published>2018-01-01T00:00:00+05:30</published><updated>2018-01-01T00:00:00+05:30</updated><id>https://teju85.github.io/ml-glossary/terms/underfitting</id><content type="html" xml:base="https://teju85.github.io/ml-glossary/terms/underfitting.html">&lt;p&gt;Underfitting is a scenario in ML where the model is unable to capture the
-general structure of the data and its patterns.&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;g_t = \nabla_{\theta_{t-1}} J(\theta_{t-1})&lt;/script&gt;
 
-&lt;p&gt;This typically occurs if the model has less parameters than is required by the
-dataset. In such cases, the model will have poor predictive ability.&lt;/p&gt;</content><author><name></name></author><summary type="html">Underfitting is a scenario in ML where the model is unable to capture the general structure of the data and its patterns.</summary></entry><entry><title type="html">svd</title><link href="https://teju85.github.io/ml-glossary/terms/svd.html" rel="alternate" type="text/html" title="svd" /><published>2018-01-01T00:00:00+05:30</published><updated>2018-01-01T00:00:00+05:30</updated><id>https://teju85.github.io/ml-glossary/terms/svd</id><content type="html" xml:base="https://teju85.github.io/ml-glossary/terms/svd.html">&lt;p&gt;SVD is a matrix factorization technique.&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;f_t = \sqrt{\epsilon + \Sigma_k (g_k)^2}&lt;/script&gt;
 
-&lt;p&gt;For a given matrix, there exists a decomposition of it which can be written as
-follows:
-&lt;script type=&quot;math/tex&quot;&gt;M = U . \Sigma . V^*&lt;/script&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;M = the input matrix of dimension m x n.&lt;/li&gt;
-  &lt;li&gt;U = m x m unitary matrix&lt;/li&gt;
-  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\Sigma&lt;/script&gt; = m x n diagonal matrix&lt;/li&gt;
-  &lt;li&gt;V = n x n unitary matrix&lt;/li&gt;
-  &lt;li&gt;V* = conjugate transpose of V&lt;/li&gt;
-&lt;/ul&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\forall k = [0, t]&lt;/script&gt;
 
-&lt;p&gt;Basic idea behind SVD is that the transformation operation performed by a matrix
-M can be viewed as a sequence of the following transformations:&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;V* represents the rotation operation applied onto to a unit hypersphere.&lt;/li&gt;
-  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\Sigma&lt;/script&gt; then represents the scaling across the co-ordinate axes.&lt;/li&gt;
-  &lt;li&gt;U represents another rotation after scaling operation.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;SVD is most often used in finding eigen values and vectors of the matrix. For
-example: columns of V are eigenvectors of &lt;script type=&quot;math/tex&quot;&gt;M^*.M&lt;/script&gt;. columns of U are eigenvectors
-of &lt;script type=&quot;math/tex&quot;&gt;M.M^*&lt;/script&gt; and non-zero elements of &lt;script type=&quot;math/tex&quot;&gt;\Sigma&lt;/script&gt; are sqrt of their eigen values.&lt;/p&gt;</content><author><name></name></author><summary type="html">SVD is a matrix factorization technique.</summary></entry><entry><title type="html">Stochastic Gradient Descent</title><link href="https://teju85.github.io/ml-glossary/terms/stochastic-gradient-descent.html" rel="alternate" type="text/html" title="Stochastic Gradient Descent" /><published>2018-01-01T00:00:00+05:30</published><updated>2018-01-01T00:00:00+05:30</updated><id>https://teju85.github.io/ml-glossary/terms/stochastic-gradient-descent</id><content type="html" xml:base="https://teju85.github.io/ml-glossary/terms/stochastic-gradient-descent.html">&lt;p&gt;This performs gradient descent on each of the samples in the dataset.&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\theta = \theta - \eta . \nabla_{\theta} J(\theta, x^i, y^i)&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\theta_t = \theta_{t-1} - \frac{\eta}{f_t} g_t&lt;/script&gt;
 
 &lt;p&gt;Where:&lt;/p&gt;
 &lt;ol&gt;
-  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;x^i, y^i&lt;/script&gt; i’th input sample and label in the dataset&lt;/li&gt;
-  &lt;li&gt;all others as explained in
-&lt;a href=&quot;/ml-glossary/terms/gradient-descent.html&quot;&gt;gradient descent&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\epsilon&lt;/script&gt; = smoothing parameter&lt;/li&gt;
+  &lt;li&gt;all others are as explained in
+&lt;a href=&quot;/ml-glossary/terms/nesterov-accelerated-gradient.html&quot;&gt;NAG&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;Pros:&lt;/p&gt;
 &lt;ol&gt;
-  &lt;li&gt;Runs fast&lt;/li&gt;
-  &lt;li&gt;Similar convergence guarantees as in
-&lt;a href=&quot;/ml-glossary/terms/batch-gradient-descent.html&quot;&gt;batch gradient descent&lt;/a&gt;,
-though one should gradually anneal &lt;script type=&quot;math/tex&quot;&gt;\eta&lt;/script&gt; over time to achieve this.&lt;/li&gt;
-  &lt;li&gt;Supports online learning&lt;/li&gt;
+  &lt;li&gt;Works well for sparse data&lt;/li&gt;
+  &lt;li&gt;improves robustness of SGD&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;Cons:&lt;/p&gt;
 &lt;ol&gt;
-  &lt;li&gt;Creates high variance updates to the parameters&lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><summary type="html">This performs gradient descent on each of the samples in the dataset.</summary></entry><entry><title type="html">Stochastic Average Gradient Descent</title><link href="https://teju85.github.io/ml-glossary/terms/stochastic-average-gradient-descent.html" rel="alternate" type="text/html" title="Stochastic Average Gradient Descent" /><published>2018-01-01T00:00:00+05:30</published><updated>2018-01-01T00:00:00+05:30</updated><id>https://teju85.github.io/ml-glossary/terms/stochastic-average-gradient-descent</id><content type="html" xml:base="https://teju85.github.io/ml-glossary/terms/stochastic-average-gradient-descent.html">&lt;p&gt;This is a hybrid between batch gradient descent and stochastic gradient descent.&lt;/p&gt;
+  &lt;li&gt;Due to accumulated squared gradients, it can shrink the learning rate very badly&lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">This method updates the learning rate to each parameter. Large updates for infrequent params, small updates for the frequent ones.</summary></entry><entry><title type="html">Adam</title><link href="https://teju85.github.io/ml-glossary/terms/adam.html" rel="alternate" type="text/html" title="Adam" /><published>2018-01-01T00:00:00+05:30</published><updated>2018-01-01T00:00:00+05:30</updated><id>https://teju85.github.io/ml-glossary/terms/adam</id><content type="html" xml:base="https://teju85.github.io/ml-glossary/terms/adam.html">&lt;p&gt;Same as &lt;a href=&quot;/ml-glossary/terms/adadelta.html&quot;&gt;AdaDelta&lt;/a&gt; and
+&lt;a href=&quot;/ml-glossary/terms/rmsprop.html&quot;&gt;RMSProp&lt;/a&gt;, stores the
+running average of past gradients to use them as moment.&lt;/p&gt;
 
-&lt;p&gt;At each iteration, it picks a sample at random and updates the gradient for that
-sample. For all others, the one from the previous iteration is kept around. After
-this, it just performs a full batch-gradient-descent on this!&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;g_t = \nabla_{\theta_{t-1}} J(\theta_{t-1})&lt;/script&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\delta_{i_k} = \nabla_{\theta} J(\theta, x_{i_k}, y_{i_k})&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;m_t = \beta_1 m_{t-1} + (1 - \beta_1) g_t&lt;/script&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\theta = \theta - \eta . \Sigma_i \delta_i&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;v_t = \beta_2 v_{t-1} + (1 - \beta_2) g_t^2&lt;/script&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\forall i = [0, n)&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;m'_t = \frac{m_t}{1 - \beta_1^t}&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;v'_t = \frac{v_t}{1 - \beta_2^t}&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\Delta \theta_t = - \frac{\eta}{\sqrt{v'_t} + \epsilon} m'_t&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\theta_t = \theta_{t-1} + \Delta \theta_t&lt;/script&gt;
 
 &lt;p&gt;Where:&lt;/p&gt;
 &lt;ol&gt;
-  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\theta&lt;/script&gt; = parameters&lt;/li&gt;
-  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;J&lt;/script&gt; = the function to be optimized&lt;/li&gt;
-  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\eta&lt;/script&gt; = learning rate&lt;/li&gt;
-  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;n&lt;/script&gt; = number of samples&lt;/li&gt;
-  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;i_k&lt;/script&gt; = random index at the current iteration&lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><summary type="html">This is a hybrid between batch gradient descent and stochastic gradient descent.</summary></entry><entry><title type="html">SMO</title><link href="https://teju85.github.io/ml-glossary/terms/smo.html" rel="alternate" type="text/html" title="SMO" /><published>2018-01-01T00:00:00+05:30</published><updated>2018-01-01T00:00:00+05:30</updated><id>https://teju85.github.io/ml-glossary/terms/smo</id><content type="html" xml:base="https://teju85.github.io/ml-glossary/terms/smo.html">&lt;p&gt;SMO is an iterative algo for efficiently solving quadratic programming (QP). QP
-most commonly arises while solving SVMs.&lt;/p&gt;</content><author><name></name></author><summary type="html">SMO is an iterative algo for efficiently solving quadratic programming (QP). QP most commonly arises while solving SVMs.</summary></entry><entry><title type="html">Simplex Algorithm</title><link href="https://teju85.github.io/ml-glossary/terms/simplex-algorithm.html" rel="alternate" type="text/html" title="Simplex Algorithm" /><published>2018-01-01T00:00:00+05:30</published><updated>2018-01-01T00:00:00+05:30</updated><id>https://teju85.github.io/ml-glossary/terms/simplex-algorithm</id><content type="html" xml:base="https://teju85.github.io/ml-glossary/terms/simplex-algorithm.html">&lt;p&gt;Simplex algorithm is one of the methods to solve linear programming problems.&lt;/p&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;m_t&lt;/script&gt; = first moment of gradients&lt;/li&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;v_t&lt;/script&gt; = second moment of gradients&lt;/li&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\beta_1, \beta_2&lt;/script&gt; = decay rates&lt;/li&gt;
+  &lt;li&gt;all others are as explained in
+&lt;a href=&quot;/ml-glossary/terms/adagrad.html&quot;&gt;AdaGrad&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">Same as AdaDelta and RMSProp, stores the running average of past gradients to use them as moment.</summary></entry><entry><title type="html">Adamax</title><link href="https://teju85.github.io/ml-glossary/terms/adamax.html" rel="alternate" type="text/html" title="Adamax" /><published>2018-01-01T00:00:00+05:30</published><updated>2018-01-01T00:00:00+05:30</updated><id>https://teju85.github.io/ml-glossary/terms/adamax</id><content type="html" xml:base="https://teju85.github.io/ml-glossary/terms/adamax.html">&lt;p&gt;Same as &lt;a href=&quot;/ml-glossary/terms/adam.html&quot;&gt;Adam&lt;/a&gt;, but uses the
+&lt;script type=&quot;math/tex&quot;&gt;l_{\infty}&lt;/script&gt; norm in the running average of past gradients.&lt;/p&gt;
 
-&lt;p&gt;It solves the standard form of linear programming problem:
-Maximizing &lt;script type=&quot;math/tex&quot;&gt;c^T . x&lt;/script&gt; subject to &lt;script type=&quot;math/tex&quot;&gt;Ax = b&lt;/script&gt; all &lt;script type=&quot;math/tex&quot;&gt;x_i &gt;= 0&lt;/script&gt; and all &lt;script type=&quot;math/tex&quot;&gt;b_j &gt;= 0&lt;/script&gt;.&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;v_t = \beta_2 v_{t-1} + (1 - \beta_2) |g_t|^\infty&lt;/script&gt;
+
+&lt;p&gt;OR&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;v_t = max(\beta_2 v_{t-1}, |g_t|)&lt;/script&gt;
 
 &lt;p&gt;Where:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;terms and remaining equations are as in &lt;a href=&quot;/ml-glossary/terms/adam.html&quot;&gt;Adam&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">Same as Adam, but uses the norm in the running average of past gradients.</summary></entry><entry><title type="html">AMSgrad</title><link href="https://teju85.github.io/ml-glossary/terms/amsgrad.html" rel="alternate" type="text/html" title="AMSgrad" /><published>2018-01-01T00:00:00+05:30</published><updated>2018-01-01T00:00:00+05:30</updated><id>https://teju85.github.io/ml-glossary/terms/amsgrad</id><content type="html" xml:base="https://teju85.github.io/ml-glossary/terms/amsgrad.html">&lt;p&gt;Similar to &lt;a href=&quot;/ml-glossary/terms/adam.html&quot;&gt;Adam&lt;/a&gt; but keeps the
+previous max gradient to avoid converging to local optima.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;v'_t = max(v'_{t-1}, v_t)&lt;/script&gt;
+
+&lt;p&gt;Where:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;all others and remaining equations are as explained in
+&lt;a href=&quot;/ml-glossary/terms/adam.html&quot;&gt;Adam&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">Similar to Adam but keeps the previous max gradient to avoid converging to local optima.</summary></entry><entry><title type="html">bagging</title><link href="https://teju85.github.io/ml-glossary/terms/bagging.html" rel="alternate" type="text/html" title="bagging" /><published>2018-01-01T00:00:00+05:30</published><updated>2018-01-01T00:00:00+05:30</updated><id>https://teju85.github.io/ml-glossary/terms/bagging</id><content type="html" xml:base="https://teju85.github.io/ml-glossary/terms/bagging.html">&lt;p&gt;An ensemble ML technique to reduce overfitting and variance.&lt;/p&gt;
+
+&lt;p&gt;From a training dataset T, generate ‘n’ new datasets by sampling observations in
+T with replacement. Then train ‘n’ models separately on these sampled datsets.
+Finally, use a consensus among these models to get final prediction.&lt;/p&gt;
+
+&lt;p&gt;This technique is typically used with decision trees, as they are more
+susceptible to overfitting.&lt;/p&gt;</content><author><name></name></author><summary type="html">An ensemble ML technique to reduce overfitting and variance.</summary></entry><entry><title type="html">Batch Gradient Descent</title><link href="https://teju85.github.io/ml-glossary/terms/batch-gradient-descent.html" rel="alternate" type="text/html" title="Batch Gradient Descent" /><published>2018-01-01T00:00:00+05:30</published><updated>2018-01-01T00:00:00+05:30</updated><id>https://teju85.github.io/ml-glossary/terms/batch-gradient-descent</id><content type="html" xml:base="https://teju85.github.io/ml-glossary/terms/batch-gradient-descent.html">&lt;p&gt;This performs gradient descent with the entire dataset.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\theta = \theta - \eta . \nabla_{\theta} J(\theta)&lt;/script&gt;
+
+&lt;p&gt;Where the meaning of each is as defined in
+&lt;a href=&quot;/ml-glossary/terms/gradient-descent.html&quot;&gt;gradient descent&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Pros:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Guaranteed to converge to global minima for convex &lt;script type=&quot;math/tex&quot;&gt;J&lt;/script&gt;.&lt;/li&gt;
+  &lt;li&gt;Converges to local minima for other surface types.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Cons:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Doesn’t work for datasets needing to be out-of-core.&lt;/li&gt;
+  &lt;li&gt;Thus, no online learning&lt;/li&gt;
+  &lt;li&gt;Runs slow&lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">This performs gradient descent with the entire dataset.</summary></entry><entry><title type="html">bias</title><link href="https://teju85.github.io/ml-glossary/terms/bias.html" rel="alternate" type="text/html" title="bias" /><published>2018-01-01T00:00:00+05:30</published><updated>2018-01-01T00:00:00+05:30</updated><id>https://teju85.github.io/ml-glossary/terms/bias</id><content type="html" xml:base="https://teju85.github.io/ml-glossary/terms/bias.html">&lt;p&gt;Bias is the amount of assumptions made by the ML algo in order to learn a target
+function from training data.&lt;/p&gt;
+
+&lt;p&gt;Ideally, these assumptions should be as little as possible. That way, the ML
+algo can be as flexible as posisble. But some ML algorithms have high bias than
+others. In such cases, their predictive ability gets hampered.&lt;/p&gt;</content><author><name></name></author><summary type="html">Bias is the amount of assumptions made by the ML algo in order to learn a target function from training data.</summary></entry><entry><title type="html">CART</title><link href="https://teju85.github.io/ml-glossary/terms/cart.html" rel="alternate" type="text/html" title="CART" /><published>2018-01-01T00:00:00+05:30</published><updated>2018-01-01T00:00:00+05:30</updated><id>https://teju85.github.io/ml-glossary/terms/cart</id><content type="html" xml:base="https://teju85.github.io/ml-glossary/terms/cart.html">&lt;p&gt;Short for Classification And Regression Tree, an umbrella term for both
+classification and regression decision trees.&lt;/p&gt;</content><author><name></name></author><summary type="html">Short for Classification And Regression Tree, an umbrella term for both classification and regression decision trees.</summary></entry><entry><title type="html">Cholesky Decomp</title><link href="https://teju85.github.io/ml-glossary/terms/cholesky-decomp.html" rel="alternate" type="text/html" title="Cholesky Decomp" /><published>2018-01-01T00:00:00+05:30</published><updated>2018-01-01T00:00:00+05:30</updated><id>https://teju85.github.io/ml-glossary/terms/cholesky-decomp</id><content type="html" xml:base="https://teju85.github.io/ml-glossary/terms/cholesky-decomp.html">&lt;p&gt;Cholesky decomposition is a hermitian positive-definite matrix factorization
+technique.&lt;/p&gt;
+
+&lt;p&gt;For a given hermitian positive-definite matrix A, there exists a decomposition
+of the form:
+&lt;script type=&quot;math/tex&quot;&gt;A = L . L^*&lt;/script&gt;&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;c = coefficients&lt;/li&gt;
-  &lt;li&gt;x = the variables&lt;/li&gt;
-  &lt;li&gt;A = a rectangular matrix&lt;/li&gt;
-  &lt;li&gt;b = constants&lt;/li&gt;
+  &lt;li&gt;A = the input matrix of dimension n x n.&lt;/li&gt;
+  &lt;li&gt;L = lower triangular matrix&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Simplex algorithm iteratively tests adjacent vertices all the while improving
-the objective function. This can also be visualized as a traversal along the
-edges of a polytope formed by the standard form.&lt;/p&gt;</content><author><name></name></author><summary type="html">Simplex algorithm is one of the methods to solve linear programming problems.</summary></entry><entry><title type="html">semantic segmentation</title><link href="https://teju85.github.io/ml-glossary/terms/semantic-segmentation.html" rel="alternate" type="text/html" title="semantic segmentation" /><published>2018-01-01T00:00:00+05:30</published><updated>2018-01-01T00:00:00+05:30</updated><id>https://teju85.github.io/ml-glossary/terms/semantic-segmentation</id><content type="html" xml:base="https://teju85.github.io/ml-glossary/terms/semantic-segmentation.html">&lt;p&gt;Semantic segmentation is a segmentation problem where one has to identify
-all category of objects.&lt;/p&gt;
-
-&lt;p&gt;They need not necessarily classify all instances of the same category, though.
-Refer to &lt;a href=&quot;/ml-glossary//terms/instance-segmentation.html&quot;&gt;instance segmentation&lt;/a&gt;
-for more details on this. Example: chairs, table, people, etc.&lt;/p&gt;</content><author><name></name></author><summary type="html">Semantic segmentation is a segmentation problem where one has to identify all category of objects.</summary></entry></feed>
+&lt;p&gt;Cholesky-decomp is ~2x faster than LU-decomp for solving linear systems, when
+applicable.&lt;/p&gt;</content><author><name></name></author><summary type="html">Cholesky decomposition is a hermitian positive-definite matrix factorization technique.</summary></entry></feed>
