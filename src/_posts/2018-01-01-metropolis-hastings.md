@@ -2,7 +2,7 @@
 layout: page
 title:  Metropolis-Hastings
 needmath: true
-seealso: MCMC
+seealso: markov-chain-monte-carlo
 ---
 MH is one way of doing MCMC.
 
