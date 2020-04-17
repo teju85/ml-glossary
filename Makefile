@@ -16,19 +16,20 @@ COMMIT_MSG ?=
 
 default:
 	@echo "make what? Available targets are:"
-	@echo " . publish - publish the built pages as well as original"
-	@echo "             changes to remote repo. Assumes that you are"
-	@echo "             inside the 'master' branch!"
+	@echo " . build   - build the pages in '${SRC_BRANCH}' branch and copy"
+	@echo "             them over to '${DST_BRANCH}' branch."
+	@echo " . publish - publish changes to remote repo."
 	@echo " . serve   - build files and start a local server to test changes."
 	@echo "             Assumes that you are inside the 'master' branch!"
 	@echo " . clean   - clean the generated files"
 	@echo " . update  - update 3rd-party js/css files"
 
-publish:
+build:
 	@read -p "Enter commit message: " cmtMsg && \
-	    $(MAKE) COMMIT_MSG="$$cmtMsg" _publish
+	    $(MAKE) COMMIT_MSG="$$cmtMsg" _build
 
-_publish:
+_build:
+	git checkout $(SRC_BRANCH)
 	jekyll build -s $(SRC_DIR) -d $(SITE_DIR)
 	git add -A
 	git commit -m "$(COMMIT_MSG)"
@@ -38,6 +39,9 @@ _publish:
 	git add -A
 	git commit -m "$(COMMIT_MSG)"
 	git checkout $(SRC_BRANCH)
+
+publish:
+	git checkout ${SRC_BRANCH}
 	git push origin $(SRC_BRANCH) $(DST_BRANCH)
 
 serve:
