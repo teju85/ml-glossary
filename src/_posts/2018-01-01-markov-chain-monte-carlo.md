@@ -5,8 +5,10 @@ needmath: true
 aka: MCMC
 ---
 MCMC methods help us in estimating the posterior distributions via sampling
-from a complicated probability distribution. As the name suggests, it consists
-of 2 parts: Monte Carlo and Markov Chain.
+from a complicated probability distribution. It is a non-parametric approach
+to estimating the posterior distribution and as such, with enough iterations it
+can converge to the expected distribution. As the name suggests, it consists of
+2 parts: Monte Carlo and Markov Chain.
 
 Monte Carlo: a technique to randomly sample a distribution to help approximate
 the desired quantity. Example: calculating the value of $$\pi$$.

@@ -5,7 +5,9 @@ needmath: true
 aka: variational bayesian methods
 seealso: evidence-lower-bound
 ---
-VI another form of approximating the posterior distribution (or likelihood).
+VI another form of approximating the posterior distribution (or likelihood),
+but using a parametric distribution. Thus, it is computationally simpler but
+causes errors to linger around in the approximated final distribution.
 
 VI starts by approximating the true posterior $$P(Z | X)$$ with a simpler
 distribution $$Q(Z)$$ (eg: Gaussian) and then try to make this approximation
