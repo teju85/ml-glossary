@@ -9,11 +9,9 @@ seealso:
   - minibatch-gradient-descent
   - stochastic-gradient-descent
 ---
-This performs gradient descent with the entire dataset.
+This performs gradient descent with the *entire* dataset.
 
-$$ \theta = \theta - \eta . \nabla_{\theta} J(\theta) $$
-
-Where the meaning of each is as defined in
+The equations and their meanings are as defined in
 [gradient descent]({{ site.baseurl }}{% post_url 2018-01-01-gradient-descent %})
 
 Pros:

@@ -20,10 +20,11 @@ Gradient descent minimizes the objective function (aka surface) $$J(\theta)$$
 where $$\theta$$ are the parameters of the system, by updating these parameters
 in the *opposite* side of their gradient.
 
-$$\theta = \theta - \eta . \nabla_{\theta} J(\theta)$$
+* $$g_t = \frac{\partial J(\theta_t)}{\partial \theta_t}$$
+* $$\theta_{t+1} = \theta_t - \eta . g_t$$
 
 Where:
 1. $$\theta$$ = set of parameters
-2. J = the function to be optimized
+2. $$J$$ = the function or surface to be optimized
 3. $$\eta$$ = learning rate, a hyperparameter that is to be tuned to achieve
-good convergence.
+   good convergence.

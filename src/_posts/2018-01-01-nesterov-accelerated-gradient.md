@@ -9,13 +9,18 @@ seealso:
   - gradient-descent
   - momentum-gradient-descent
 ---
-To avoid big jumps due to gradient descent with momentum, NAG first makes the
-big jump and then corrects it accordingly.
+[momentum gradient descent]({{ site.baseurl }}{% post_url 2018-01-01-momentum-gradient-descent %})
+performs big jumps due to momentum. To avoid this, NAG first computes the
+gradient and then makes a big jump.
 
-$$ v_t = \gamma v_{t-1} + \eta \nabla_{\theta} J(\theta - \gamma v_{t-1})$$
+NAG first makes a big jump in the direction of the previously accumulated
+gradient, which is $$\theta_t - \gamma v_{t-1}$$. It then measures where it ends
+up and accordingly makes a correction.
 
-$$\theta = \theta - v_t$$
+* $$m_t = \theta_t - \gamma v_{t-1}$$
+* $$v_t = \gamma v_{t-1} + \eta \frac{\partial J(m_t)}{\partial \theta_t}$$
+* $$\theta_{t+1} = \theta_t - v_t$$
 
 Where:
-1. all terms are as explained in
-[momentum gradient descent]({{ site.baseurl }}{% post_url 2018-01-01-momentum-gradient-descent %})
+1. all other equations and parameters are are as explained in
+   [momentum gradient descent]({{ site.baseurl }}{% post_url 2018-01-01-momentum-gradient-descent %})
