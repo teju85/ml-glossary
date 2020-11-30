@@ -1,18 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://teju85.github.io/ml-glossary/feed.xml" rel="self" type="application/atom+xml" /><link href="https://teju85.github.io/ml-glossary/" rel="alternate" type="text/html" /><updated>2020-07-29T08:47:41+05:30</updated><id>https://teju85.github.io/ml-glossary/feed.xml</id><title type="html">ML Glossary</title><subtitle>A glossary of ML keywords.</subtitle><entry><title type="html">weights</title><link href="https://teju85.github.io/ml-glossary/terms/weights.html" rel="alternate" type="text/html" title="weights" /><published>2018-01-01T00:00:00+05:30</published><updated>2018-01-01T00:00:00+05:30</updated><id>https://teju85.github.io/ml-glossary/terms/weights</id><content type="html" xml:base="https://teju85.github.io/ml-glossary/terms/weights.html"></content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Adagrad</title><link href="https://teju85.github.io/ml-glossary/terms/adagrad.html" rel="alternate" type="text/html" title="Adagrad" /><published>2018-01-01T00:00:00+05:30</published><updated>2018-01-01T00:00:00+05:30</updated><id>https://teju85.github.io/ml-glossary/terms/adagrad</id><content type="html" xml:base="https://teju85.github.io/ml-glossary/terms/adagrad.html">&lt;p&gt;This method updates the learning rate to each parameter. Large updates for
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://teju85.github.io/ml-glossary/feed.xml" rel="self" type="application/atom+xml" /><link href="https://teju85.github.io/ml-glossary/" rel="alternate" type="text/html" /><updated>2020-11-30T11:40:21+05:30</updated><id>https://teju85.github.io/ml-glossary/feed.xml</id><title type="html">ML Glossary</title><subtitle>A glossary of ML keywords.</subtitle><entry><title type="html">weights</title><link href="https://teju85.github.io/ml-glossary/terms/weights.html" rel="alternate" type="text/html" title="weights" /><published>2018-01-01T00:00:00+05:30</published><updated>2018-01-01T00:00:00+05:30</updated><id>https://teju85.github.io/ml-glossary/terms/weights</id><content type="html" xml:base="https://teju85.github.io/ml-glossary/terms/weights.html"></content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Adagrad</title><link href="https://teju85.github.io/ml-glossary/terms/adagrad.html" rel="alternate" type="text/html" title="Adagrad" /><published>2018-01-01T00:00:00+05:30</published><updated>2018-01-01T00:00:00+05:30</updated><id>https://teju85.github.io/ml-glossary/terms/adagrad</id><content type="html" xml:base="https://teju85.github.io/ml-glossary/terms/adagrad.html">&lt;p&gt;This method adapts the learning rate to each parameter. Large updates for
 infrequent params, small updates for the frequent ones.&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;g_t = \nabla_{\theta_{t-1}} J(\theta_{t-1})&lt;/script&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;f_t = \sqrt{\epsilon + \Sigma_k (g_k)^2}&lt;/script&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\forall k = [0, t]&lt;/script&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\theta_t = \theta_{t-1} - \frac{\eta}{f_t} g_t&lt;/script&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;G_t = \Sigma_k g_k^2&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;v_t = \frac{\eta}{\sqrt{\epsilon + G_t}} g_t&lt;/script&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;Where:&lt;/p&gt;
 &lt;ol&gt;
   &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\epsilon&lt;/script&gt; = smoothing parameter&lt;/li&gt;
-  &lt;li&gt;all others are as explained in
+  &lt;li&gt;all other equations and parameters are as explained in
 &lt;a href=&quot;/ml-glossary/terms/nesterov-accelerated-gradient.html&quot;&gt;NAG&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
@@ -25,30 +26,46 @@ infrequent params, small updates for the frequent ones.&lt;/p&gt;
 &lt;p&gt;Cons:&lt;/p&gt;
 &lt;ol&gt;
   &lt;li&gt;Due to accumulated squared gradients, it can shrink the learning rate very badly&lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><summary type="html">This method updates the learning rate to each parameter. Large updates for infrequent params, small updates for the frequent ones.</summary></entry><entry><title type="html">Adam</title><link href="https://teju85.github.io/ml-glossary/terms/adam.html" rel="alternate" type="text/html" title="Adam" /><published>2018-01-01T00:00:00+05:30</published><updated>2018-01-01T00:00:00+05:30</updated><id>https://teju85.github.io/ml-glossary/terms/adam</id><content type="html" xml:base="https://teju85.github.io/ml-glossary/terms/adam.html">&lt;p&gt;Same as &lt;a href=&quot;/ml-glossary/terms/adadelta.html&quot;&gt;AdaDelta&lt;/a&gt; and
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">This method adapts the learning rate to each parameter. Large updates for infrequent params, small updates for the frequent ones.</summary></entry><entry><title type="html">Adam</title><link href="https://teju85.github.io/ml-glossary/terms/adam.html" rel="alternate" type="text/html" title="Adam" /><published>2018-01-01T00:00:00+05:30</published><updated>2018-01-01T00:00:00+05:30</updated><id>https://teju85.github.io/ml-glossary/terms/adam</id><content type="html" xml:base="https://teju85.github.io/ml-glossary/terms/adam.html">&lt;p&gt;Same as &lt;a href=&quot;/ml-glossary/terms/adadelta.html&quot;&gt;AdaDelta&lt;/a&gt; and
 &lt;a href=&quot;/ml-glossary/terms/rmsprop.html&quot;&gt;RMSProp&lt;/a&gt;, stores the
 running average of past gradients to use them as moment.&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;g_t = \nabla_{\theta_{t-1}} J(\theta_{t-1})&lt;/script&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;m_t = \beta_1 m_{t-1} + (1 - \beta_1) g_t&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;v_t = \beta_2 v_{t-1} + (1 - \beta_2) g_t^2&lt;/script&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;m_t = \beta_1 m_{t-1} + (1 - \beta_1) g_t&lt;/script&gt;
+&lt;p&gt;Since &lt;script type=&quot;math/tex&quot;&gt;m_t&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;v_t&lt;/script&gt; are zero-initialized, they bias towards zero. To
+correct for this:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;m'_t = \frac{m_t}{1 - \beta_1^t}&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;v'_t = \frac{v_t}{1 - \beta_2^t}&lt;/script&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;v_t = \beta_2 v_{t-1} + (1 - \beta_2) g_t^2&lt;/script&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;m'_t = \frac{m_t}{1 - \beta_1^t}&lt;/script&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;v'_t = \frac{v_t}{1 - \beta_2^t}&lt;/script&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\Delta \theta_t = - \frac{\eta}{\sqrt{v'_t} + \epsilon} m'_t&lt;/script&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\theta_t = \theta_{t-1} + \Delta \theta_t&lt;/script&gt;
+&lt;p&gt;Final updates are then defined as:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\Delta \theta_t = - \frac{\eta}{\sqrt{v'_t} + \epsilon} m'_t&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\theta_t = \theta_{t-1} + \Delta \theta_t&lt;/script&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;Where:&lt;/p&gt;
 &lt;ol&gt;
   &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;m_t&lt;/script&gt; = first moment of gradients&lt;/li&gt;
   &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;v_t&lt;/script&gt; = second moment of gradients&lt;/li&gt;
   &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\beta_1, \beta_2&lt;/script&gt; = decay rates&lt;/li&gt;
-  &lt;li&gt;all others are as explained in
+  &lt;li&gt;all other equations and parameters are as explained in
 &lt;a href=&quot;/ml-glossary/terms/adagrad.html&quot;&gt;AdaGrad&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;</content><author><name></name></author><summary type="html">Same as AdaDelta and RMSProp, stores the running average of past gradients to use them as moment.</summary></entry><entry><title type="html">Adamax</title><link href="https://teju85.github.io/ml-glossary/terms/adamax.html" rel="alternate" type="text/html" title="Adamax" /><published>2018-01-01T00:00:00+05:30</published><updated>2018-01-01T00:00:00+05:30</updated><id>https://teju85.github.io/ml-glossary/terms/adamax</id><content type="html" xml:base="https://teju85.github.io/ml-glossary/terms/adamax.html">&lt;p&gt;Same as &lt;a href=&quot;/ml-glossary/terms/adam.html&quot;&gt;Adam&lt;/a&gt;, but uses the
 &lt;script type=&quot;math/tex&quot;&gt;l_{\infty}&lt;/script&gt; norm in the running average of past gradients.&lt;/p&gt;
@@ -61,7 +78,8 @@ running average of past gradients to use them as moment.&lt;/p&gt;
 
 &lt;p&gt;Where:&lt;/p&gt;
 &lt;ol&gt;
-  &lt;li&gt;terms and remaining equations are as in &lt;a href=&quot;/ml-glossary/terms/adam.html&quot;&gt;Adam&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;all other equations and parameters are as in
+&lt;a href=&quot;/ml-glossary/terms/adam.html&quot;&gt;Adam&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;</content><author><name></name></author><summary type="html">Same as Adam, but uses the norm in the running average of past gradients.</summary></entry><entry><title type="html">AMSgrad</title><link href="https://teju85.github.io/ml-glossary/terms/amsgrad.html" rel="alternate" type="text/html" title="AMSgrad" /><published>2018-01-01T00:00:00+05:30</published><updated>2018-01-01T00:00:00+05:30</updated><id>https://teju85.github.io/ml-glossary/terms/amsgrad</id><content type="html" xml:base="https://teju85.github.io/ml-glossary/terms/amsgrad.html">&lt;p&gt;Similar to &lt;a href=&quot;/ml-glossary/terms/adam.html&quot;&gt;Adam&lt;/a&gt; but keeps the
 previous max gradient to avoid converging to local optima.&lt;/p&gt;
 
@@ -78,11 +96,9 @@ T with replacement. Then train ‘n’ models separately on these sampled datset
 Finally, use a consensus among these models to get final prediction.&lt;/p&gt;
 
 &lt;p&gt;This technique is typically used with decision trees, as they are more
-susceptible to overfitting.&lt;/p&gt;</content><author><name></name></author><summary type="html">An ensemble ML technique to reduce overfitting and variance.</summary></entry><entry><title type="html">Batch Gradient Descent</title><link href="https://teju85.github.io/ml-glossary/terms/batch-gradient-descent.html" rel="alternate" type="text/html" title="Batch Gradient Descent" /><published>2018-01-01T00:00:00+05:30</published><updated>2018-01-01T00:00:00+05:30</updated><id>https://teju85.github.io/ml-glossary/terms/batch-gradient-descent</id><content type="html" xml:base="https://teju85.github.io/ml-glossary/terms/batch-gradient-descent.html">&lt;p&gt;This performs gradient descent with the entire dataset.&lt;/p&gt;
+susceptible to overfitting.&lt;/p&gt;</content><author><name></name></author><summary type="html">An ensemble ML technique to reduce overfitting and variance.</summary></entry><entry><title type="html">Batch Gradient Descent</title><link href="https://teju85.github.io/ml-glossary/terms/batch-gradient-descent.html" rel="alternate" type="text/html" title="Batch Gradient Descent" /><published>2018-01-01T00:00:00+05:30</published><updated>2018-01-01T00:00:00+05:30</updated><id>https://teju85.github.io/ml-glossary/terms/batch-gradient-descent</id><content type="html" xml:base="https://teju85.github.io/ml-glossary/terms/batch-gradient-descent.html">&lt;p&gt;This performs gradient descent with the &lt;em&gt;entire&lt;/em&gt; dataset.&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\theta = \theta - \eta . \nabla_{\theta} J(\theta)&lt;/script&gt;
-
-&lt;p&gt;Where the meaning of each is as defined in
+&lt;p&gt;The equations and their meanings are as defined in
 &lt;a href=&quot;/ml-glossary/terms/gradient-descent.html&quot;&gt;gradient descent&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Pros:&lt;/p&gt;
