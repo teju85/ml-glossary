@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://teju85.github.io/ml-glossary/feed.xml" rel="self" type="application/atom+xml" /><link href="https://teju85.github.io/ml-glossary/" rel="alternate" type="text/html" /><updated>2020-11-30T11:43:00+05:30</updated><id>https://teju85.github.io/ml-glossary/feed.xml</id><title type="html">ML Glossary</title><subtitle>A glossary of ML keywords.</subtitle><entry><title type="html">weights</title><link href="https://teju85.github.io/ml-glossary/terms/weights.html" rel="alternate" type="text/html" title="weights" /><published>2018-01-01T00:00:00+05:30</published><updated>2018-01-01T00:00:00+05:30</updated><id>https://teju85.github.io/ml-glossary/terms/weights</id><content type="html" xml:base="https://teju85.github.io/ml-glossary/terms/weights.html"></content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Adagrad</title><link href="https://teju85.github.io/ml-glossary/terms/adagrad.html" rel="alternate" type="text/html" title="Adagrad" /><published>2018-01-01T00:00:00+05:30</published><updated>2018-01-01T00:00:00+05:30</updated><id>https://teju85.github.io/ml-glossary/terms/adagrad</id><content type="html" xml:base="https://teju85.github.io/ml-glossary/terms/adagrad.html">&lt;p&gt;This method adapts the learning rate to each parameter. Large updates for
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://teju85.github.io/ml-glossary/feed.xml" rel="self" type="application/atom+xml" /><link href="https://teju85.github.io/ml-glossary/" rel="alternate" type="text/html" /><updated>2020-11-30T20:03:25+05:30</updated><id>https://teju85.github.io/ml-glossary/feed.xml</id><title type="html">ML Glossary</title><subtitle>A glossary of ML keywords.</subtitle><entry><title type="html">weights</title><link href="https://teju85.github.io/ml-glossary/terms/weights.html" rel="alternate" type="text/html" title="weights" /><published>2018-01-01T00:00:00+05:30</published><updated>2018-01-01T00:00:00+05:30</updated><id>https://teju85.github.io/ml-glossary/terms/weights</id><content type="html" xml:base="https://teju85.github.io/ml-glossary/terms/weights.html"></content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Adagrad</title><link href="https://teju85.github.io/ml-glossary/terms/adagrad.html" rel="alternate" type="text/html" title="Adagrad" /><published>2018-01-01T00:00:00+05:30</published><updated>2018-01-01T00:00:00+05:30</updated><id>https://teju85.github.io/ml-glossary/terms/adagrad</id><content type="html" xml:base="https://teju85.github.io/ml-glossary/terms/adagrad.html">&lt;p&gt;This method adapts the learning rate to each parameter. Large updates for
 infrequent params, small updates for the frequent ones.&lt;/p&gt;
 
 &lt;ul&gt;
@@ -31,6 +31,9 @@ infrequent params, small updates for the frequent ones.&lt;/p&gt;
 running average of past gradients to use them as moment.&lt;/p&gt;
 
 &lt;ul&gt;
+  &lt;li&gt;
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;g_t = \frac{\partial J(\theta_t)}{\partial \theta_t}&lt;/script&gt;
+  &lt;/li&gt;
   &lt;li&gt;
     &lt;script type=&quot;math/tex; mode=display&quot;&gt;m_t = \beta_1 m_{t-1} + (1 - \beta_1) g_t&lt;/script&gt;
   &lt;/li&gt;
@@ -65,8 +68,8 @@ correct for this:&lt;/p&gt;
   &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;m_t&lt;/script&gt; = first moment of gradients&lt;/li&gt;
   &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;v_t&lt;/script&gt; = second moment of gradients&lt;/li&gt;
   &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\beta_1, \beta_2&lt;/script&gt; = decay rates&lt;/li&gt;
-  &lt;li&gt;all other equations and parameters are as explained in
-&lt;a href=&quot;/ml-glossary/terms/adagrad.html&quot;&gt;AdaGrad&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\eta&lt;/script&gt; = learning rate&lt;/li&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\epsilon&lt;/script&gt; = smoothing parameter&lt;/li&gt;
 &lt;/ol&gt;</content><author><name></name></author><summary type="html">Same as AdaDelta and RMSProp, stores the running average of past gradients to use them as moment.</summary></entry><entry><title type="html">Adamax</title><link href="https://teju85.github.io/ml-glossary/terms/adamax.html" rel="alternate" type="text/html" title="Adamax" /><published>2018-01-01T00:00:00+05:30</published><updated>2018-01-01T00:00:00+05:30</updated><id>https://teju85.github.io/ml-glossary/terms/adamax</id><content type="html" xml:base="https://teju85.github.io/ml-glossary/terms/adamax.html">&lt;p&gt;Same as &lt;a href=&quot;/ml-glossary/terms/adam.html&quot;&gt;Adam&lt;/a&gt;, but uses the
 &lt;script type=&quot;math/tex&quot;&gt;l_{\infty}&lt;/script&gt; norm in the running average of past gradients.&lt;/p&gt;
 
